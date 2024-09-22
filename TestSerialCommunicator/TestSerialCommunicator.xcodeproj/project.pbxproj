@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		118F3BE62CA09D7B004C927A /* SwiftSerial in Frameworks */ = {isa = PBXBuildFile; productRef = 118F3BE52CA09D7B004C927A /* SwiftSerial */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		118F3BC32CA06ACE004C927A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				118F3BE62CA09D7B004C927A /* SwiftSerial in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = TestSerialCommunicator;
 			packageProductDependencies = (
+				118F3BE52CA09D7B004C927A /* SwiftSerial */,
 			);
 			productName = TestSerialCommunicator;
 			productReference = 118F3BB12CA06AC8004C927A /* TestSerialCommunicator.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 118F3BA82CA06AC8004C927A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				118F3BE42CA09D7B004C927A /* XCRemoteSwiftPackageReference "SwiftSerial" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 118F3BB22CA06AC8004C927A /* Products */;
 			projectDirPath = "";
@@ -393,6 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TestSerialCommunicator/TestSerialCommunicator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -418,6 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = TestSerialCommunicator/TestSerialCommunicator.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -541,6 +552,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		118F3BE42CA09D7B004C927A /* XCRemoteSwiftPackageReference "SwiftSerial" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mredig/SwiftSerial";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		118F3BE52CA09D7B004C927A /* SwiftSerial */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 118F3BE42CA09D7B004C927A /* XCRemoteSwiftPackageReference "SwiftSerial" */;
+			productName = SwiftSerial;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 118F3BA92CA06AC8004C927A /* Project object */;
 }
